@@ -83,5 +83,5 @@ activitySubjectAvgSet<- ddply(fullSet, .(ActivityName,SubjectId), summarize,
                                                               )
 
 # Wirite Result Dataset to file
-write.table(activitySubjectAvgSet, "ActivitySubjectAvg.txt")
+write.table(activitySubjectAvgSet, "ActivitySubjectAvg.txt", row.name=FALSE)
         
